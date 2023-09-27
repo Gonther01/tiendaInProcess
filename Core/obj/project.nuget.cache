@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TXsguMQ9rvpGv4toRTUuUiB93SHMfeNC1ShahfEFI9qejN3+8rFSWzNl+xn2yBFzTGtTWSG9wIAIDtPBEj1/8Q==",
+  "dgSpecHash": "FAxraYUW+iVsUJWk+nmylzeEfOm9cNkKBTMUrZ89pg3wwNH+YMD2gPMAOxXb8lU3uCyL2KGQjdxgvxYjQkGMSA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj",
+  "projectFilePath": "/workspaces/tiendaInProcess/Core/Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

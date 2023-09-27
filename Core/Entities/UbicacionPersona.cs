@@ -10,7 +10,7 @@ namespace Core.Entities
         public string TipoDeVia { get; set; }
         public int NumeroPri { get; set; }
         public int NumeroSec { get; set; }
-        public int NumeoTer { get; set; }
+        public int NumeroTer { get; set; }
         public string Bis { get; set; }
         public string CardinalPri { get; set; }
         public string CardinalSec { get; set; }

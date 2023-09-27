@@ -33,8 +33,8 @@ public class UbicacionPersonaConfiguration : IEntityTypeConfiguration<UbicacionP
 
         builder.Property(p => p.Complemento).IsRequired().HasMaxLength(50);
 
-        builder.HasOne(p => p.Persona).WithMany(p => p.UbicacionPersona).HasForeignKey(e => e.IdPersonaFk);
+        builder.HasOne(p => p.Personas).WithMany(p => p.UbicacionesPersonas).HasForeignKey(e => e.IdPersonaFk);
 
-        builder.HasOne(p => p.Ciudad).WithMany(p => p.UbicacionPersona).HasForeignKey(e => e.IdCiudadFk);
+        builder.HasOne(p => p.Ciudades).WithMany(p => p.UbicacionesPersonas).HasForeignKey(e => e.IdCiudadFk);
     }
 }
