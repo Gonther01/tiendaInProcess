@@ -14,9 +14,7 @@ public class CiudadConfiguration : IEntityTypeConfiguration<Ciudad>
 
         builder.Property(p => p.Nombre).IsRequired().HasMaxLength(50);
 
-        builder.HasOne(p => p.Departamentos)
-        .WithMany(p => p.Ciudades)
-        .HasForeignKey(e => e.IdDepartamentoFk);
+        builder.HasOne(p => p.Departamentos).WithMany(p => p.Ciudades).HasForeignKey(e => e.IdDepartamentoFk);
         // Aqui puedes configurar las propiedades de la entidad 
         // Utilizando el objeto 'builder'
     }

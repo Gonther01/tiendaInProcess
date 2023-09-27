@@ -14,8 +14,6 @@ public class PaisConfiguration : IEntityTypeConfiguration<Pais>
         builder.HasKey(e => e.Id);
         builder.Property(e => e.Id);
 
-        builder.Property(p => p.Nombre)
-        .IsRequired()
-        .HasMaxLength(50);
+        builder.Property(p => p.Nombre).IsRequired().HasMaxLength(50);
     }
 }
