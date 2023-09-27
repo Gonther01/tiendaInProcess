@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\USER\\Desktop\\tienda\\API\\API.csproj": {}
+    "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\USER\\Desktop\\tienda\\API\\API.csproj": {
+    "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tienda\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\USER\\Desktop\\tienda\\API\\API.csproj",
+        "projectPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\API\\API.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\Desktop\\tienda\\API\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\Infrastructure.csproj"
+              "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\Infraestructura.csproj": {
+                "projectPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\Infraestructura.csproj"
               }
             }
           }
@@ -43,6 +43,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
             },
@@ -74,14 +80,14 @@
         }
       }
     },
-    "c:\\Users\\USER\\Desktop\\tienda\\core\\core.csproj": {
+    "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tienda\\core\\core.csproj",
-        "projectName": "core",
-        "projectPath": "c:\\Users\\USER\\Desktop\\tienda\\core\\core.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\Desktop\\tienda\\core\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -127,14 +133,14 @@
         }
       }
     },
-    "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\Infraestructura.csproj",
+        "projectName": "Infraestructura",
+        "projectPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\Infraestructura.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\Desktop\\tienda\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -149,8 +155,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\USER\\Desktop\\tienda\\core\\core.csproj": {
-                "projectPath": "c:\\Users\\USER\\Desktop\\tienda\\core\\core.csproj"
+              "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj": {
+                "projectPath": "c:\\Users\\USER\\Desktop\\tiendaCampus2023\\Core\\Core.csproj"
               }
             }
           }
@@ -164,6 +170,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
